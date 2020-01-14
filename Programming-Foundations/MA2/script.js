@@ -20,7 +20,7 @@ console.log(`there are ${petArray.length} items inside the petArray`);
 let catObject = {
   name: "Garfield",
   color: ["orange", "black", "yellow"],
-  age: 40 + "years old"
+  age: 40 + " years old"
 };
 
 // question 6
@@ -33,7 +33,7 @@ catArray = [
   {
     name: "Garfield",
     color: ["orange", "black", "yellow"],
-    age: 40 + "years old"
+    age: 40 + " years old"
   }
 ];
 
