@@ -46,7 +46,9 @@ for (let i = 0; i < catArray.length; i++) {
 
 // question 9
 
-const logToConsole = value => console.log(value);
+function logToConsole(value) {
+  console.log(value);
+}
 
 // question 10
 
