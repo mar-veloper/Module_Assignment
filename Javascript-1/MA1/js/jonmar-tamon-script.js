@@ -46,14 +46,14 @@ const cats = [
 ];
 
 function handleArrayIteration(catArray) {
-  catArray.forEach(item => console.log(item.name));
+  return catArray.forEach(item => console.log(item.name));
 }
 
 handleArrayIteration(cats);
 
 // question 8
 
-function handleTagWrapping_q8(array) {
+function handleElemTagWrapping_q8(array) {
   const names = array.map(item => item.name);
   let newHTML = "";
   names.map(name => (newHTML += `<h5>${name}</h5>`));
@@ -63,13 +63,13 @@ function handleTagWrapping_q8(array) {
 
 // question 9
 
-const namesInCatsArray = handleTagWrapping_q8(cats);
+const namesInCatsArray = handleElemTagWrapping_q8(cats);
 
 resultsContainer.innerHTML += namesInCatsArray;
 
 // question 10
 
-function handleTagWrapping_q10(array) {
+function handleElemTagWrapping_q10(array) {
   let newHTML = "";
 
   array.map(
@@ -84,6 +84,6 @@ function handleTagWrapping_q10(array) {
   return newHTML;
 }
 
-const catsInfo = handleTagWrapping_q10(cats);
+const catsInfo = handleElemTagWrapping_q10(cats);
 
 resultsContainer.innerHTML += catsInfo;
