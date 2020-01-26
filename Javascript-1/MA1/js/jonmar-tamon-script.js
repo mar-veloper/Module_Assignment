@@ -55,7 +55,7 @@ handleArrayIteration(cats);
 
 function handleElemTagWrapping_q8(array) {
   const names = array.map(item => item.name);
-  let newHTML = "";
+  let newHTML = "<h2>Question 8</h2>";
   names.map(name => (newHTML += `<h5>${name}</h5>`));
 
   return newHTML;
@@ -70,7 +70,7 @@ resultsContainer.innerHTML += namesInCatsArray;
 // question 10
 
 function handleElemTagWrapping_q10(array) {
-  let newHTML = "";
+  let newHTML = "<h2>Question 10</h2>";
 
   array.map(
     item =>
