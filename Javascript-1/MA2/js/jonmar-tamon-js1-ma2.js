@@ -102,3 +102,14 @@ function greetHello() {
 }
 
 let sayHello = setInterval(greetHello, 500);
+
+// question 10
+
+const divContainer = document.querySelector(".container");
+
+function replaceDivText() {
+  const newHTML = (divContainer.innerText = "Text Updated");
+  return newHTML;
+}
+
+const divTextUpdated = setTimeout(replaceDivText, 2000);
