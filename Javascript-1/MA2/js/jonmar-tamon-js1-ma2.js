@@ -84,3 +84,9 @@ switch (lowerCaseAnimal) {
     console.log("Harrumph");
     break;
 }
+
+// question 8
+
+const sheeps = ["Malcolm", "Anders", "Marie"];
+
+sheeps.forEach(sheep => console.log(sheep));
