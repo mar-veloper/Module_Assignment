@@ -51,3 +51,15 @@ function removeHoverClass() {
 }
 
 dataAnimalDog.addEventListener("mouseout", removeHoverClass);
+
+// question 6
+
+const liArray = document.querySelectorAll("li");
+
+for (let i = 0; i < liArray.length; i++) {
+  const liElement = liArray[i];
+  function logDataAttribute() {
+    console.log(liElement.dataset.animal);
+  }
+  liElement.addEventListener("mouseover", logDataAttribute);
+}
