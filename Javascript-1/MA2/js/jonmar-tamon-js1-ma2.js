@@ -90,3 +90,15 @@ switch (lowerCaseAnimal) {
 const sheeps = ["Malcolm", "Anders", "Marie"];
 
 sheeps.forEach(sheep => console.log(sheep));
+
+// question 9
+
+let countHello = 1;
+
+function greetHello() {
+  console.log("Hello");
+
+  countHello === 6 ? clearInterval(sayHello) : countHello++;
+}
+
+let sayHello = setInterval(greetHello, 500);
