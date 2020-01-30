@@ -31,13 +31,14 @@ firstNameInput.addEventListener("keydown", logKeyPressed);
 const allButton = document.querySelectorAll("button");
 
 for (let i = 0; i < allButton.length; i++) {
-  const element = allButton[i];
+  const buttonElement = allButton[i];
+
   function addHoverClass() {
-    return element.className.includes("hover")
+    return buttonElement.className.includes("hover")
       ? ""
-      : (element.className += " hover");
+      : (buttonElement.className += " hover");
   }
-  element.addEventListener("mouseover", addHoverClass);
+  buttonElement.addEventListener("mouseover", addHoverClass);
 }
 
 // question 5
