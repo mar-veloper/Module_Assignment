@@ -63,3 +63,24 @@ for (let i = 0; i < liArray.length; i++) {
   }
   liElement.addEventListener("mouseover", logDataAttribute);
 }
+
+// question 7
+
+const animal = "CoW";
+const lowerCaseAnimal = animal.toLowerCase();
+
+switch (lowerCaseAnimal) {
+  case "cat":
+    console.log("Meow");
+    break;
+  case "cow":
+    console.log("Moo");
+    break;
+  case "bird":
+    console.log("Tweet");
+    break;
+
+  default:
+    console.log("Harrumph");
+    break;
+}
