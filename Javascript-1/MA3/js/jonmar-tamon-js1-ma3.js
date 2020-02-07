@@ -11,12 +11,11 @@ const baseUrl = "https://api.rawg.io/api/games?genres=sports";
 function getApiQuestion2(api, func) {
   fetch(api)
     .then(response => response.json())
-    .then(json => func(json))
-    .catch(() => (window.location.href = "error.html"));
+    .then(result => func(result))
+    .catch(() => (window.location.replace = "error.html"));
 }
 
-// Uncomment the function call down to see question 2 !!!!!!!!!!
-// getApi(baseUrl, logGamesNames);
+getApiQuestion2(baseUrl, logGamesNames);
 
 function logGamesNames(json) {
   const gamesNames = json.results.map(result => console.log(result.name));
