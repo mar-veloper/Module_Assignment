@@ -52,3 +52,9 @@ console.log("Question 3: " + sentence2);
 //     document.location.href = "third.html";
 //     break;
 // }
+
+// question 5
+const divContainer = document.querySelector(".container");
+const button = document.querySelector(".btn");
+
+divContainer.removeChild(button);
