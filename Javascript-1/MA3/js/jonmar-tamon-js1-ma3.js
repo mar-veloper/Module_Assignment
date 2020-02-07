@@ -84,11 +84,12 @@ function ratingInDivHTML(json) {
   json.ratings.map(
     rating =>
       (ratingNewHTML += `
+      <p>
       id: ${rating.id} </br> 
       title: ${rating.title} </br> 
       count: ${rating.count} </br> 
       percent: ${rating.percent} 
-      <hr>`)
+      </p>`)
   );
 
   return (rating.innerHTML += ratingNewHTML);
