@@ -8,7 +8,7 @@ console.log(substract1);
 //question 2
 const baseUrl = "https://api.rawg.io/api/games?genres=sports";
 
-function getApi(api, func) {
+function getApiQuestion2(api, func) {
   fetch(api)
     .then(response => response.json())
     .then(json => func(json))
@@ -58,3 +58,39 @@ const divContainer = document.querySelector(".container");
 const button = document.querySelector(".btn");
 
 divContainer.removeChild(button);
+
+// question 6
+const cows = document.querySelector(".cows");
+const parrots = document.createElement("li");
+parrots.className = "parrots";
+parrots.innerText = "Parrots";
+cows.after(parrots);
+
+// question 7
+
+const ratingsUrl = "https://api.rawg.io/api/games/3801";
+
+function getApiQuestion7(api, func) {
+  fetch(api)
+    .then(response => response.json())
+    .then(json => func(json))
+    .catch(error => console.log(error));
+}
+
+function ratingInDivHTML(json) {
+  const rating = document.querySelector(".rating");
+  ratingNewHTML = "";
+
+  json.ratings.map(
+    rating =>
+      (ratingNewHTML += `
+      id: ${rating.id} </br> 
+      title: ${rating.title} </br> 
+      count: ${rating.count} </br> 
+      percent: ${rating.percent} 
+      <hr>`)
+  );
+
+  return (rating.innerHTML += ratingNewHTML);
+}
+getApiQuestion7(ratingsUrl, ratingInDivHTML);
