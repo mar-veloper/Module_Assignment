@@ -79,7 +79,7 @@ function getApiQuestion7(api, func) {
 
 function ratingInDivHTML(json) {
   const rating = document.querySelector(".rating");
-  ratingNewHTML = "";
+  let ratingNewHTML = "";
 
   json.ratings.map(
     rating =>
